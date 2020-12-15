@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/http//andres08restrepo.github.io/react-ggb2/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/http//andres08restrepo.github.io/react-ggb2/static/js/main.960d3e37.chunk.js",
-    "main.js.map": "/http//andres08restrepo.github.io/react-ggb2/static/js/main.960d3e37.chunk.js.map",
-    "runtime-main.js": "/http//andres08restrepo.github.io/react-ggb2/static/js/runtime-main.bf932e0d.js",
-    "runtime-main.js.map": "/http//andres08restrepo.github.io/react-ggb2/static/js/runtime-main.bf932e0d.js.map",
-    "static/js/2.448509e6.chunk.js": "/http//andres08restrepo.github.io/react-ggb2/static/js/2.448509e6.chunk.js",
-    "static/js/2.448509e6.chunk.js.map": "/http//andres08restrepo.github.io/react-ggb2/static/js/2.448509e6.chunk.js.map",
-    "static/js/3.4f163788.chunk.js": "/http//andres08restrepo.github.io/react-ggb2/static/js/3.4f163788.chunk.js",
-    "static/js/3.4f163788.chunk.js.map": "/http//andres08restrepo.github.io/react-ggb2/static/js/3.4f163788.chunk.js.map",
-    "index.html": "/http//andres08restrepo.github.io/react-ggb2/index.html",
-    "static/css/main.ab7136cd.chunk.css.map": "/http//andres08restrepo.github.io/react-ggb2/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.448509e6.chunk.js.LICENSE.txt": "/http//andres08restrepo.github.io/react-ggb2/static/js/2.448509e6.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/http//andres08restrepo.github.io/react-ggb2/static/media/logo.6ce24c58.svg"
+    "main.css": "/react-ggb2/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/react-ggb2/static/js/main.960d3e37.chunk.js",
+    "main.js.map": "/react-ggb2/static/js/main.960d3e37.chunk.js.map",
+    "runtime-main.js": "/react-ggb2/static/js/runtime-main.7e3ba569.js",
+    "runtime-main.js.map": "/react-ggb2/static/js/runtime-main.7e3ba569.js.map",
+    "static/js/2.448509e6.chunk.js": "/react-ggb2/static/js/2.448509e6.chunk.js",
+    "static/js/2.448509e6.chunk.js.map": "/react-ggb2/static/js/2.448509e6.chunk.js.map",
+    "static/js/3.4f163788.chunk.js": "/react-ggb2/static/js/3.4f163788.chunk.js",
+    "static/js/3.4f163788.chunk.js.map": "/react-ggb2/static/js/3.4f163788.chunk.js.map",
+    "index.html": "/react-ggb2/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/react-ggb2/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.448509e6.chunk.js.LICENSE.txt": "/react-ggb2/static/js/2.448509e6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-ggb2/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf932e0d.js",
+    "static/js/runtime-main.7e3ba569.js",
     "static/js/2.448509e6.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
     "static/js/main.960d3e37.chunk.js"
