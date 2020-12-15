@@ -1,0 +1,127 @@
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "../Layout/Layout.scss";
+.header-container{
+    width: calc(100% - 24px);
+    min-width: 296px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $blanco-verde;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*estilos boton hamburguesa*/
+
+.header-container .hamburger{
+    margin: 0;
+    padding: 0;
+}
+.header-container .hamburger:focus{
+    outline: none;
+}
+
+.hamburger-box{
+    height: 26px;
+    width: 36px;
+    margin-left: 30px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after
+{
+    width: 36px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $verde-secundario;
+}
+
+/*estilos logo*/
+
+.header-container img{
+    width: 100px;
+    height: auto;
+}
+/*estilo icono whatsapp*/
+
+.header-container i{
+    font-size: 41.14px;
+    height: auto;
+    color: $verde-primario;
+    margin-right: 30px;
+}
+
+/*estilos menu*/
+
+.menu {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 300ms all;
+    font-family: $font-titulos;
+    background-color: $blanco-verde;
+    margin-top: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul, menu ul ul{
+    list-style: none;
+}
+
+.menu.menu-desplegado{
+    max-height: calc(100vh - 100px);
+    height: 100vh;
+    width: 100%;
+}
+
+.menu-desplegado .menu-principal > li,
+.menu-principal ul > li{
+    border-bottom: 1px solid $verde-primario;
+    font-size: $parrafo;
+    font-weight: 600;
+    padding: 8px 30px;
+    color: $verde-primario;
+}
+
+.menu-desplegado .menu-principal li a,
+.menu-principal ul li a{
+    color: $verde-primario;
+}
+
+.menu-desplegado .menu-principal .submenu{
+    max-height: 0;
+    overflow: hidden;
+    transition: 300ms all;
+}
+.menu-desplegado .menu-principal .fas{
+    float: right;
+    margin-top: 4px;
+    transition: 300ms all;
+}
+
+.menu-desplegado .menu-principal .submenu.activo{
+    max-height: 132px;
+    height: auto;
+}
+
+.menu-desplegado .menu-principal .submenu.activo li{
+    background-color: $verde-primario;
+    border-bottom: 1px solid $blanco-verde;
+}
+.menu-desplegado .menu-principal .submenu.activo a{
+    color: $blanco-verde;
+}
+
+.menu .menu-principal .activo{
+    background-color: $verde-textos;
+}
+
+.menu .menu-principal .activo a{
+    color: $blanco-verde;
+}
+.menu .menu-principal .activo i{
+    transform: rotate(180deg);
+}

@@ -22,7 +22,7 @@ const App = () => {
         <BrowserRouter>
             <Layout>
                 <Switch>
-                    <Route exact path="/react-ggb2" component={Home}/>
+                    <Route exact path="/" component={Home}/>
                     <Route exact path="/dieta-barf" component={DietaBarf} />
                     <Route exact path="/calcula-racion" component={CalculaRacion} />
                     <Route exact path="/productos" component={Productos} />
