@@ -17,13 +17,51 @@ $font-titulos:'Poppins', sans-serif; ;
 $font-parrafos:'Lato', sans-serif;
 
 /*tamaños tipografias*/
-$titulo-principal: 3.6rem;
-$titulo-secundario: 2.4rem;
-$parrafo: 1.8rem;
-$texto-boton: 2rem;
-$sub-parrafo: 1.4rem; 
+$titulo-principal: 3.2rem;
+$titulo-secundario: 2rem;
+$parrafo: 1.6rem;
+$texto-boton: 1.8rem;
+$sub-parrafo: 1.2rem;
 
-/*pesos tipografias*/
-$peso-titulo-principal: bold;
-$peso-titulo-secundario: 600;
-$peso-botones: 600;
+h2{
+    text-align: center;
+    font-family: $font-titulos;
+    font-weight: bold;
+    font-size: $titulo-principal;
+ }
+
+h3{
+    text-align: center;
+    font-family: $font-titulos;
+    font-weight: 600;
+    font-size: $titulo-secundario;
+ };
+
+p{
+     font-family: $font-parrafos;
+     font-size: $parrafo;
+ }
+ 
+ .boton{
+    width: 150px;
+    height: 53px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .boton a{
+     text-decoration: none;
+     font-family: $font-titulos;
+     font-weight: 600;
+     font-size: $texto-boton;
+ }
+ .boton-verde-principal{
+     background-color: $verde-primario;
+     color: $verde-textos;
+ }
+ .boton-verde-principal a{
+     color: $verde-textos;
+ }
