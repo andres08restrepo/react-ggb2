@@ -73,10 +73,10 @@ header{
 .menu {
     max-height: 0px;
     overflow: hidden;
-    transition: 300ms all;
     font-family: $font-titulos;
     background-color: $blanco-verde;
     margin-top: 20px;
+    transition: 300ms all;
 }
 
 .menu ul li a{
@@ -92,7 +92,7 @@ header{
     width: 100%;
 }
 
-.menu-desplegado .menu-principal > li,
+.menu .menu-principal > li,
 .menu-principal ul > li{
     border-bottom: 1px solid $verde-primario;
     font-size: $parrafo;
@@ -101,32 +101,32 @@ header{
     color: $verde-primario;
 }
 
-.menu-desplegado .menu-principal li a,
+.menu .menu-principal li a,
 .menu-principal ul li a{
     color: $verde-primario;
 }
 
-.menu-desplegado .menu-principal .submenu{
+.menu .menu-principal .submenu{
     max-height: 0;
     overflow: hidden;
     transition: 300ms all;
 }
-.menu-desplegado .menu-principal .fas{
+.menu .menu-principal .fas{
     float: right;
     margin-top: 4px;
     transition: 300ms all;
 }
 
-.menu-desplegado .menu-principal .submenu.activo{
-    max-height: 132px;
+.menu .menu-principal .submenu.activo{
+    max-height: 126px;
     height: auto;
 }
 
-.menu-desplegado .menu-principal .submenu.activo li{
+.menu .menu-principal .submenu.activo li{
     background-color: $verde-primario;
     border-bottom: 1px solid $blanco-verde;
 }
-.menu-desplegado .menu-principal .submenu.activo a{
+.menu .menu-principal .submenu.activo a{
     color: $blanco-verde;
 }
 

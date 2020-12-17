@@ -12,12 +12,12 @@ const DietaBarf = () => {
 
             <section className="dieta-barf-principal">
             <h2>DIETA BARF</h2>
-                <h3>¿Qué es la dieta BARF?</h3>
+                <h3>¿QUÉ ES LA DIETA BARF?</h3>
                 <p className="exterior">Es una dieta alternativa de alimentación que reemplaza al concentrado y a diferencia de este está hecha con ingredientes 100% naturales. Consiste en darle a tu perro un alimento crudo y biológicamente apropiado para su organismo.
                 </p>
                 <p className="exterior">Gracias al balance y combinación ideal entre sus ingredientes, la dieta BARF permite una mejor digestión y un mayor aprovechamiento de los nutrientes.
                 </p>
-                <h3>¿Qué compone la dieta BARF?</h3>
+                <h3>¿QUÉ COMPONE LA DIETA BARF?</h3>
 
                 <div className="dieta-barf-componentes">
                     <div className="logo">
@@ -67,7 +67,7 @@ const DietaBarf = () => {
             <section className="dieta-barf-beneficios">
                 <h3>BENEFICIOS DE LA DIETA BARF</h3>
                 <p>
-                    La vitalidad y energía que aporta esta alimentación ¡la notarás de inmediato! La combinación entre carne y grasas animales es todo lo que tu peludito necesita para estar más que listo y naturalmente feliz a la hora del juego.
+                    La vitalidad y energía que aporta esta alimentación ¡la notarás de inmediato!<br></br>La combinación entre carne y grasas animales es todo lo que tu peludito necesita para estar más que listo y naturalmente feliz a la hora del juego.
                 </p>
                 <p>
                     Con nuestra BARF la hora de la comida se convertirá en ¡la hora feliz! Las texturas, olores, y humedad de este tipo de alimento hacen que sea completamente atractivo para tu perro, a diferencia de un alimento seco. Créenos ¡dejará el plato limpio!
