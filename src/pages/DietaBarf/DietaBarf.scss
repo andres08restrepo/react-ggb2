@@ -3,10 +3,12 @@
 .dieta-barf-container{
     background-color: $verde-textos;
     padding-bottom: 30px;
+    width: 100%;
+    min-width: 320px;
 }
  .dieta-barf-imagen{
      width: 100%;
-     height: 70vh;
+     height: 60vh;
  }
 
  .dieta-barf-principal{
@@ -66,8 +68,8 @@
     background-color: $verde-primario;
     border-radius: 20px;
     margin: 0 auto;
-    color: $blanco-verde;
-    margin-top: -40px;
+    color: $verde-textos;
+    margin-top: -50px;
 }
 .dieta-barf-beneficios h3{
     padding-top: 30px;
@@ -80,8 +82,13 @@
 .dieta-barf-beneficios .ilustracion{
     width: calc(100% - 40px);
     height: auto;
-    margin: 20px auto;
+    margin: 25px auto;
 }
+.dieta-barf-beneficios .ilustracion img{
+   max-width: 100%;
+   height: auto;
+}
+
 
 .dieta-barf-calcular,
 .dieta-barf-productos{

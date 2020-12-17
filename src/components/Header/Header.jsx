@@ -9,6 +9,7 @@ const Header = () => {
     const [hamburger, setHamburger]= useState("");
     const [menu, setMenu]= useState("");
     const [submenu, setSubmenu]= useState("");
+    const [scroll, setScroll]=useState("");
 
     const toggleHamburger = () => {
         if (hamburger === ""){
@@ -29,8 +30,17 @@ const Header = () => {
         }
     }
 
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction(){
+        if (document.documentElement.scrollTop > 265){
+            setScroll("scroll");
+        }else {
+            setScroll("");
+        }
+    }
+
     return(
-        <header>
+        <header className={`${scroll}`}>
             <div className="header-container">
                 <button onClick={ toggleHamburger } className={`hamburger hamburger--collapse ${hamburger}`} type="button">
                     <span className="hamburger-box">
