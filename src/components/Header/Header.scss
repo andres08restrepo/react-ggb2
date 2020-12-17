@@ -1,5 +1,12 @@
 @import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 @import "../Layout/Layout.scss";
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .header-container{
     width: calc(100% - 24px);
     min-width: 296px;
@@ -35,6 +42,13 @@
     width: 36px;
     height: 6px;
     border-radius: 3px;
+    background-color: $verde-secundario;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before, 
+.hamburger.is-active .hamburger-inner::after
+{
     background-color: $verde-secundario;
 }
 
@@ -124,4 +138,78 @@
 }
 .menu .menu-principal .activo i{
     transform: rotate(180deg);
+}
+
+/*estilos redes*/
+
+.menu-redes-container{
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.menu-redes-container .menu-redes-icono{
+    width: 48px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-redes-container .menu-redes-icono .fab{
+    font-size: 40px;
+    color: $verde-textos;
+}
+
+/*estilos menu secundario*/
+
+.menu-secundario{
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.menu-secundario li a{
+    color: $verde-textos;
+    font-size: $sub-parrafo;
+}
+
+/*sticky menu secundario*/
+
+.menu-secundario-container{
+    margin-top: 142px;
+    transition: 300ms all;
+}
+.menu-secundario-container.activo{
+    margin-top: 10px;
+}
+
+@media only screen and (min-height: 660px){
+    .menu-secundario-container{
+        margin-top: 202px;
+        transition: 300ms all;
+    }
+    .menu-secundario-container.activo{
+        margin-top: 70px;
+    }
+    
+}
+
+@media only screen and (min-height: 717px){
+    .menu-secundario-container{
+        margin-top: 250px;
+        transition: 300ms all;
+    }
+    .menu-secundario-container.activo{
+        margin-top: 118px;
+    }
+    
+}
+
+@media only screen and (min-height: 800px){
+    .menu-secundario-container{
+        margin-top: 333px;
+        transition: 300ms all;
+    }
+    .menu-secundario-container.activo{
+        margin-top: 201px;
+    }
+    
 }

@@ -11,9 +11,9 @@ const Header = () => {
     const [submenu, setSubmenu]= useState("");
 
     const toggleHamburger = () => {
-        if (hamburger == ""){
+        if (hamburger === ""){
             setHamburger ("is-active");
-            setMenu ("menu-desplegado");
+            setMenu ("menu-desplegado"); 
         } else{
             setHamburger("");
             setMenu("");
@@ -22,7 +22,7 @@ const Header = () => {
     }
 
     const toggleSubmenu = () => {
-        if (submenu == ""){
+        if (submenu === ""){
             setSubmenu ("activo");
         } else{
             setSubmenu("");
@@ -38,32 +38,36 @@ const Header = () => {
                     </span>
                 </button>
                 <Link to="/" onClick={ () => {setMenu(''); setHamburger(''); setSubmenu('');} }><img src={logo} alt="Logo GreenGardenBARF"/></Link>
-                <i className="fab fa-whatsapp-square" />
+                <a href="https://wa.me/573114575267"><i className="fab fa-whatsapp-square" /></a>
             </div>
             <nav className={`menu ${menu}`}>
-                 <ul className="menu-principal">
-                    <li><Link to="/dieta-barf" onClick={ toggleHamburger }>DIETA BARF</Link></li>
-                    <li><Link to="/calcula-racion" onClick={ toggleHamburger }>CALCULA RACION</Link></li>
-                    <li className={ submenu }><Link onClick={ toggleSubmenu }>PRODUCTOS<i class="fas fa-arrow-down"/></Link></li>
-                         <ul className={`submenu ${submenu}`}>
-                            <li><Link to="/productos/barf" onClick={ toggleHamburger }>BARF</Link></li>
-                            <li><Link to="/productos/snacks" onClick={ toggleHamburger }>SNACKS</Link></li>
-                            <li><Link to="/productos/cumpleaños" onClick={ toggleHamburger }>CUMPLEAÑOS</Link></li>
-                            <li><Link to="/productos/combos" onClick={ toggleHamburger }>COMBOS</Link></li>
-                        </ul>
-                    <li><Link to="/nosotros" onClick={ toggleHamburger }>NOSOTROS</Link></li>
-                    <li><Link to="/familia-ggb" onClick={ toggleHamburger }>FAMILIA GGB</Link></li>
-                </ul>
-                <ul className="menu-redes">
-                    <li>instagram</li>
-                    <li>Facebook</li>
-                    <li>Whatsapp</li>
-                </ul>
-                <hr></hr>
-                <ul className="menu-secundario">
-                    <li><Link to="/preguntas-frecuentes" onClick={ toggleHamburger }>PREGUNTAS FRECUENTES</Link></li>
-                    <li><Link to="/contacto" onClick={ toggleHamburger }>CONTACTO</Link></li>
-                </ul>
+                <div className="menu-principal-container">
+                    <ul className="menu-principal">
+                        <li><Link to="/dieta-barf" onClick={ toggleHamburger }>DIETA BARF</Link></li>
+                        <li><Link to="/calcula-racion" onClick={ toggleHamburger }>CALCULA RACION</Link></li>
+                        <li className={ submenu } onClick={ toggleSubmenu } >PRODUCTOS<i className="fas fa-arrow-down"/></li>
+                            <ul className={`submenu ${submenu}`}>
+                                <li><Link to="/productos/barf" onClick={ toggleHamburger }>BARF</Link></li>
+                                <li><Link to="/productos/snacks" onClick={ toggleHamburger }>SNACKS</Link></li>
+                                <li><Link to="/productos/cumpleaños" onClick={ toggleHamburger }>CUMPLEAÑOS</Link></li>
+                                <li><Link to="/productos/combos" onClick={ toggleHamburger }>COMBOS</Link></li>
+                            </ul>
+                        <li><Link to="/nosotros" onClick={ toggleHamburger }>NOSOTROS</Link></li>
+                        <li><Link to="/familia-ggb" onClick={ toggleHamburger }>FAMILIA GGB</Link></li>
+                    </ul>
+                </div>
+                <div className={`menu-secundario-container ${submenu}`}>
+                    <div className="menu-redes-container">
+                        <div className="menu-redes-icono"><a href="https://instagram.com/greengardenbarf"><i className="fab fa-instagram"/></a></div>
+                        <div className="menu-redes-icono"><a href="https://es-la.facebook.com/greengardenbarf/"><i className="fab fa-facebook-square"/></a></div>
+                        <div className="menu-redes-icono"><a href="https://wa.me/573114575267"><i className="fab fa-whatsapp-square" /></a></div>
+                    </div>
+                    <hr></hr>
+                    <ul className="menu-secundario">
+                        <li><Link to="/preguntas-frecuentes" onClick={ toggleHamburger }>PREGUNTAS FRECUENTES</Link></li>
+                        <li><Link to="/contacto" onClick={ toggleHamburger }>CONTACTO</Link></li>
+                    </ul>
+                </div>
             </nav>
         </header>
     );
