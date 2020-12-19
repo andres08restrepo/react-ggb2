@@ -15,10 +15,12 @@ const Header = () => {
         if (hamburger === ""){
             setHamburger ("is-active");
             setMenu ("menu-desplegado"); 
+            setScroll("scroll");
         } else{
             setHamburger("");
             setMenu("");
             setSubmenu("");
+            setScroll("");
         }
     }
 
@@ -32,7 +34,7 @@ const Header = () => {
 
     window.onscroll = function() {scrollFunction()};
     function scrollFunction(){
-        if (document.documentElement.scrollTop > 265){
+        if (document.documentElement.scrollTop > 310){
             setScroll("scroll");
         }else {
             setScroll("");
