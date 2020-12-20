@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
 }
-html{
-    font-size: 62.5%;
-}
 /*colores*/
 $blanco-verde: #F3F7E0;
 $verde-primario: #96AD2B;
@@ -17,11 +14,11 @@ $font-titulos:'Poppins', sans-serif; ;
 $font-parrafos:'Lato', sans-serif;
 
 /*tamaños tipografias*/
-$titulo-principal: 3.2rem;
-$titulo-secundario: 2rem;
-$parrafo: 1.6rem;
-$texto-boton: 1.8rem;
-$sub-parrafo: 1.2rem;
+$titulo-principal: 32px;
+$titulo-secundario: 20px;
+$parrafo: 16px;
+$texto-boton: 18px;
+$sub-parrafo: 12px;
 
 h2{
     text-align: center;
