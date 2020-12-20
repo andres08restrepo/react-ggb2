@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CalculaRacion.scss';
 
 const CalculaRacion = () => {
@@ -17,7 +18,7 @@ const CalculaRacion = () => {
                     Recuerda que al ser un alimento natural y húmedo, la porción diaria de BARF puede ser diferente a la porción de otros alimentos procesados.
                 </p>
             </section>
-            <section className="calcula-racion-formualrio">
+            <section className="calcula-racion-formulario">
                 <h3>CONOCE CUÁL ES LA RACIÓN IDEAL PARA TU PELUDITO</h3>
                 <form>
                     <label for="edad">Edad</label>
@@ -42,10 +43,23 @@ const CalculaRacion = () => {
                         <option value="12">Alto rendimiento</option>
                     </select>
                     <label for="peso-ideal">Peso ideal</label>
-                    <p className="subtexto">*El peso ideal corresponde al peso que necesita tu perro para tener buen estado físico. Si estás buscando subir el peso debes poner un peso mayor al actual, si buscas adelgazar, debes poner un peso menor al actual.</p>
+                    <p className="subtexto margen-negativa">
+                        *El peso ideal corresponde al peso que necesita tu perro para tener buen estado físico. Si estás buscando subir el peso debes poner un peso mayor al actual, si buscas adelgazar, debes poner un peso menor al actual.</p>
                     <input type="number" id="peso-ideal" placeholder="Introduce el valor en kilos"></input>
                     <div className="boton boton-verde-principal">CALCULAR</div>
+                    <p>Se recomienda</p>
+                    <div>
+
+                    </div>
+                    <p className="subtexto">
+                        Este es un estimado, puede variar dependiendo del metabolismo de tu mascota, para mayor información contáctanos.
+                    </p>
                 </form>
+                <p>
+                    Si tu mascota presenta condiciones especiales de salud (alergias, patologías renales, hepáticas, etc...)<br></br>
+                    Puedes escribirnos para mayor informacion
+                </p>
+                <div className="boton boton-blanco"><Link to="/contacto">CONTACTO</Link></div>
             </section>
         </div>
     );

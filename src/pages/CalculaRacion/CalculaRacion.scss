@@ -1,0 +1,84 @@
+@import '../../components/Layout/Layout.scss';
+
+.calcula-racion-container{
+    background-color: $verde-textos;
+    padding-bottom: 30px;
+    width: 100%;
+    min-width: 320px;
+}
+
+.calcula-racion-imagen{
+    width: 100%;
+    height: 550px;
+}
+
+.calcula-racion-info{
+    width: calc(100% - 40px);
+    background-color: $blanco-verde;
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    top: -150px;
+    color: $verde-textos;
+}
+.calcula-racion-info h2{
+    padding-top: 20px;
+    line-height: 32px;
+ }
+ .calcula-racion-info p{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.calcula-racion-formulario{
+    width: calc(100% - 40px);
+    background-color: $verde-primario;
+    border-radius: 20px;
+    color: $verde-textos;
+    margin: 0 auto;
+    margin-top: -130px;
+}
+
+.calcula-racion-formulario h3{
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.calcula-racion-formulario form{
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    background-color: $verde-secundario;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: $blanco-verde;
+    padding: 20px;
+}
+.calcula-racion-formulario form label{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    font-family: $font-parrafos;
+    font-size: $parrafo;
+}
+.calcula-racion-formulario form select,
+.calcula-racion-formulario form input
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+.calcula-racion-formulario form .margen-negativa{
+   margin-top: -10px;
+   margin-bottom: 5px;
+}
+
+.calcula-racion-formulario form .subtexto{
+    font-size: $sub-parrafo;
+    font-style: italic;
+ }
